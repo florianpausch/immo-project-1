@@ -1,21 +1,29 @@
-import { realEstateImg } from "../assets/img";
+import { bgVideo2 } from "../assets/videos";
+
 
 const Hero = () => {
+
+
   return (
-    <section
-      id="hero"
-      className="xl:padding-1 wide:padding-r padding-b h-[92vh] bg-background text-tc"
-     >
-      <div className="flex flex-col justify-center items-center p-10">
-        <img src={realEstateImg} alt="House-1" width={700} height={700} className=" rounded-xl "/>
-        <p>Der Traum vom  <span className="font-bold">Eigenheim</span> - Mache ihn zur Realität</p>
-      	<a href="#properties">
-          <button className="btn btn-hover">Finde <strong>dein</strong> neues Zuhause</button>
-        </a>
-        
-      </div>
+    <section className="relative h-screen w-full">
+       <video  
+        className="absolute inset-0 w-full h-full object-cover brightness-50"
+        src={bgVideo2}
+        autoPlay
+        loop
+        muted
+        playsInline/>
+       
+       <div className="relative z-10 flex flex-col items-center justify-center font-cinzel h-full text-center text-white">
+          <h1 className="md:text-4xl font-bold">Regionale Immobilien</h1>
+          <p>Wir öffnen Türen zu deiner Heimat</p>
+          <a href="#properties"><button className="btn btn-hover">Finde <strong>dein</strong> neues Zuhause</button></a>
+       </div>
+      
+       
      </section>
-  )}
+  )
+}
 
 
-  export default Hero
+  export default Hero;

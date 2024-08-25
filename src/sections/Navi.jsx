@@ -30,7 +30,7 @@ const Navi = () => {
 
   return (
     <section>
-      <div className="h-[15vh] bg-background flex justify-between items-center w-full">
+      <div className="md:h-[15vh] pb-2 bg-background flex justify-between items-center w-full">
         <p className="text-tc font-bold text-lg md:text-4xl ml-10 font-cinzel">
           Real Estate Casa
         </p>
@@ -42,7 +42,7 @@ const Navi = () => {
 
       <div
         id="should_be_fixed"
-        className={`h-[10vh] bg-navbg flex justify-around font-cinzel font-semibold items-center shadow-md z-50 transition-all duration-300 ${
+        className={`h-[10vh] bg-navbg flex justify-around font-cinzel text-[10px] md:text-[16px] font-semibold items-center shadow-md z-50 transition-all duration-300 ${
           isFixed ? "fixed top-0 left-0 w-full" : ""
         }`}
       >

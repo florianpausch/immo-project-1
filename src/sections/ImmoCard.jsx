@@ -4,8 +4,10 @@ import { immoCards } from "../constants";
 
 const ImmoCard = () => {
   const [visibleCount, setVisibleCount] = useState(4);
+  
 
   const showMoreCards = () => {
+  
     setVisibleCount((prevCount) => prevCount + 4 )
   }
 
