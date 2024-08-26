@@ -12,7 +12,9 @@ const Hero = () => {
         autoPlay
         loop
         muted
-        playsInline/>
+        playsInline
+        preload="auto"
+        />
        
        <div className="relative z-10 flex flex-col items-center justify-center font-cinzel h-full text-center text-white">
           <h1 className="md:text-4xl font-bold">Regionale Immobilien</h1>
