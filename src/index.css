@@ -83,5 +83,7 @@
     @apply scale-105
   }
 
-
+ .detail-container {
+  @apply py-16 bg-zinc-700 text-white flex flex-col items-center justify-center 
+ }
 }

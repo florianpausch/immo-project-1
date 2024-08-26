@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { immoCards } from "../constants";
 
 
@@ -48,12 +49,12 @@ const ImmoCard = () => {
 
         <div className="flex flex-row justify-center flex-wrap">
          {/*Dynamische ImmoCards, begrenzt auf die Anzahl `visibleCount` */}
-         {filteredCards.slice(0, visibleCount).map((card) => (
-          <div key={card.id} className="border-4 mx-5 border-navbg rounded-3xl p-5 flex flex-col items-center justify-center mt-8 font-palanquin  transition-all ease duration-300 hover:scale-105 hover:cursor-pointer">
+        {filteredCards.slice(0, visibleCount).map((card) => (
+          <Link to={`/property/${card.id}`} key={card.id} className="border-4 mx-5 border-navbg rounded-3xl p-5 flex flex-col items-center justify-center mt-8 font-palanquin transition-all ease duration-300 hover:scale-105 hover:cursor-pointer">
             <div>{card.type}</div>
-            <hr className="h-1 bg-white  border-none w-full my-2"/>
+            <hr className="h-1 bg-white border-none w-full my-2"/>
             <div>
-              <img src={card.img} alt={`immo-${card.id}`} width={200} className=" rounded-xl mt-4 h-[150px]" />
+              <img src={card.img} alt={`immo-${card.id}`} width={200} className="rounded-xl mt-4 h-[150px]" />
             </div>
             <div className="flex flex-col items-center">
               <div>{card.price}</div>
@@ -61,10 +62,9 @@ const ImmoCard = () => {
               <div>{card.city}</div>
               <div>{card.street}</div>
             </div>
-          </div>
-        ))}
+            </Link>
+          ))}
       </div>
-
 
         {/* Button "Mehr anzeigen" */}
         {visibleCount < immoCards.length && (
@@ -80,3 +80,24 @@ const ImmoCard = () => {
 }
 
 export default ImmoCard
+
+
+
+
+
+
+{/*         {filteredCards.slice(0, visibleCount).map((card) => (
+          <div key={card.id} className="border-4 mx-5 border-navbg rounded-3xl p-5 flex flex-col items-center justify-center mt-8 font-palanquin  transition-all ease duration-300 hover:scale-105 hover:cursor-pointer">
+            <div>{card.type}</div>
+            <hr className="h-1 bg-white  border-none w-full my-2"/>
+            <div>
+              <img src={card.img} alt={`immo-${card.id}`} width={200} className=" rounded-xl mt-4 h-[150px]" />
+            </div>
+            <div className="flex flex-col items-center">
+              <div>{card.price}</div>
+              <div>{card.qm}, {card.rooms} Zimmer</div>
+              <div>{card.city}</div>
+              <div>{card.street}</div>
+            </div>
+          </div>
+        ))}  */}
