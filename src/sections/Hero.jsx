@@ -1,14 +1,25 @@
 import { bgVideo2 } from "../assets/videos";
+import { useEffect, useRef } from 'react';
 
 
 const Hero = () => {
 
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch(error => {
+        // Fehlerbehandlung, z.B. Fehler protokollieren oder stattdessen ein Bild anzeigen
+        console.log('Video konnte nicht abgespielt werden:', error);
+      });
+    }
+  }, []);
 
   return (
     <section className="relative h-screen w-full">
        <video  
         className="absolute inset-0 w-full h-full object-cover brightness-50"
-        src={bgVideo2}
+        src={bgVideo2} 
         autoPlay
         loop
         muted

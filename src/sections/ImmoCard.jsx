@@ -29,12 +29,12 @@ const ImmoCard = () => {
   return (
     <section id="properties" className="bg-background w-full pb-5">
       <div className="flex flex-col justify-center items-center  text-white">
-        <div className="mt-20 font-cinzel md:text-3xl font-semibold">
+        <div className="mt-20 font-cinzel text-sm md:text-3xl font-semibold">
           Alle verfügbaren Imoobilien in der Übersicht:
         </div>
 
         {/* Filters dropdown */}
-        <div className="mt-5 flex flex-row justify-center gap-4">
+        <div className="mt-5 flex flex-col md:flex-row justify-center gap-4">
           <select name="type" value={filters.type} onChange={handleFilterChange} className="p-2 rounded-md text-black">
             <option value="">Alle Objekte</option>
             <option value="Haus zum Kauf">Haus zum Kauf</option>
