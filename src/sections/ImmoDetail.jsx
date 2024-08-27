@@ -59,7 +59,7 @@ const ImmoDetail = () => {
         <img
           src={immo.imgSlider[currentImageIndex]}
           alt={`immo-${immo.id}`}
-          className="rounded-xl my-5 object-cover w-[300px] h-[200px]  md:w-[600px] md:h-[400px]"
+          className="rounded-xl my-5 object-cover w-[250px] h-[180px]  md:w-[600px] md:h-[400px]"
         />
 
         <button
