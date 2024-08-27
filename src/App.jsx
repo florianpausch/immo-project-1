@@ -3,7 +3,8 @@ import Navi from "./sections/Navi";
 import Hero from "./sections/Hero";
 import ImmoCard from "./sections/ImmoCard";
 import ImmoDetail from "./sections/ImmoDetail"; 
-import Listing from './sections/Listing';
+import Listing from "./sections/Listing"; 
+
 
 const App = () => (
   <Router>
