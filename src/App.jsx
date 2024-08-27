@@ -2,7 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navi from "./sections/Navi";
 import Hero from "./sections/Hero";
 import ImmoCard from "./sections/ImmoCard";
-import ImmoDetail from "./sections/ImmoDetail"; // Importiere die Detailseite
+import ImmoDetail from "./sections/ImmoDetail"; 
+import Listing from './sections/Listing';
 
 const App = () => (
   <Router>
@@ -17,7 +18,9 @@ const App = () => (
           <Route path="/property/:id" element={<ImmoDetail />} />
         </Routes>
       </section>
-      <section className="pt-[100rem]">lol</section>
+      <section>
+        <Listing />
+      </section>
     </main>
   </Router>
 );

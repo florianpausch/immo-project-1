@@ -16,6 +16,10 @@ import immo13Img from "./immo-13.jpg";
 import immo14Img from "./immo-14.jpg";
 import immo15Img from "./immo-15.jpg";
 import immo16Img from "./immo-16.jpg";
+import slide1_1Img from "./slide1_1Img.jpg";
+import slide1_2Img from "./slide1_2Img.webp";
+import slide1_3Img from "./slide1_3Img.jpg";
+import slide1_4Img from "./slide1_4Img.jpg";
 
 export { logo, 
           realEstateImg,
@@ -35,4 +39,8 @@ export { logo,
           immo14Img, 
           immo15Img, 
           immo16Img, 
+          slide1_1Img,
+          slide1_2Img,
+          slide1_3Img,
+          slide1_4Img,
         };
