@@ -58,7 +58,7 @@ const Listing = () => {
       <h1 className="md:text-3xl text-xl mt-20 mb-10">
         Schätzen Sie den Wert Ihrer Immobilie:
       </h1>
-      <form onSubmit={handleEstimate} className="space-y-4 w-[90vw]">
+      <form onSubmit={handleEstimate} className="space-y-4 w-[90vw] md:w-fit">
         <div className="flex flex-col gap-y-2">
           <div className="flex flex-row justify-center items-center">
             <label
