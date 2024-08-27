@@ -2,9 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navi from "./sections/Navi";
 import Hero from "./sections/Hero";
 import ImmoCard from "./sections/ImmoCard";
-import ImmoDetail from "./sections/ImmoDetail"; 
-import Listing from './sections/Listing.jsx';
-
+import ImmoDetail from "./sections/ImmoDetail";
+import Inserat from "./sections/Inserat";
 
 const App = () => (
   <Router>
@@ -20,7 +19,7 @@ const App = () => (
         </Routes>
       </section>
       <section>
-        <Listing />
+        <Inserat />
       </section>
     </main>
   </Router>
