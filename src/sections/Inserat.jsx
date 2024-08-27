@@ -55,7 +55,7 @@ const Inserat = () => {
       className="h-[100vh] font-cinzel bg-background flex flex-col items-center text-white"
     >
       <hr className="w-[90vw] " />
-      <h1 className="md:text-3xl text-xl mt-20 mb-10">
+      <h1 className="md:text-3xl items-center text-center justify-center text-xl mt-20 mb-10">
         Schätzen Sie den Wert Ihrer Immobilie:
       </h1>
       <form onSubmit={handleEstimate} className="space-y-4 w-[90vw] md:w-fit">
