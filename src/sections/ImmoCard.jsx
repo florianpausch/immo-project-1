@@ -70,7 +70,7 @@ const ImmoCard = () => {
         {visibleCount < immoCards.length && (
           <button
             onClick={showMoreCards}
-            className="btn btn-hover "  
+            className="btn btn-hover mb-20 "  
           >Mehr anzeigen</button>
         )}
       </div>

@@ -4,6 +4,7 @@ import Hero from "./sections/Hero";
 import ImmoCard from "./sections/ImmoCard";
 import ImmoDetail from "./sections/ImmoDetail";
 import Inserat from "./sections/Inserat";
+import About from "./sections/About";
 
 const App = () => (
   <Router>
@@ -20,6 +21,9 @@ const App = () => (
       </section>
       <section>
         <Inserat />
+      </section>
+      <section>
+        <About />
       </section>
     </main>
   </Router>

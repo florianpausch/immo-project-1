@@ -84,7 +84,7 @@
   }
 
  .detail-container {
-    @apply py-16 bg-zinc-700 text-white flex flex-col items-center justify-center relative;
+    @apply py-20 bg-zinc-800 text-white flex flex-col items-center justify-center relative;
   }
   
   .close-button {
