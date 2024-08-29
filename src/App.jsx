@@ -5,6 +5,11 @@ import ImmoCard from "./sections/ImmoCard";
 import ImmoDetail from "./sections/ImmoDetail";
 import Inserat from "./sections/Inserat";
 import About from "./sections/About";
+import UnsereGeschichte from './components/UnsereGeschichte';
+import UnserTeam from "./components/UnserTeam";
+import UnsereMission from "./components/UnsereMission";
+import UnsereWerte from "./components/UnsereWerte";
+import Kundenbewertungen from "./components/Kundenbewertungen";
 
 const App = () => (
   <Router>
@@ -23,7 +28,14 @@ const App = () => (
         <Inserat />
       </section>
       <section>
-        <About />
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/unsere-geschichte" element={<UnsereGeschichte />} />
+          <Route path="/unser-team" element={<UnserTeam />} />
+          <Route path="/unsere-mission" element={<UnsereMission />} />
+          <Route path="/unsere-werte" element={<UnsereWerte />} />
+          <Route path="/Kundenbewertungen" element={<Kundenbewertungen />} />
+        </Routes>
       </section>
     </main>
   </Router>

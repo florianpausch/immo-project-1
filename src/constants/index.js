@@ -1,4 +1,4 @@
-import { immo1Img, immo2Img, immo3Img, immo4Img, immo5Img,immo6Img, immo7Img , immo8Img , immo9Img , immo10Img, immo11Img , immo12Img , immo13Img , immo14Img , immo15Img, immo16Img, slide1_1Img, slide1_2Img, slide1_3Img, slide1_4Img   } from "../assets/img"
+import { immo1Img, immo2Img, immo3Img, immo4Img, immo5Img,immo6Img, immo7Img , immo8Img , immo9Img , immo10Img, immo11Img , immo12Img , immo13Img , immo14Img , immo15Img, immo16Img, slide1_1Img, slide1_2Img, slide1_3Img, slide1_4Img, man1Img, man2Img, man3Img, woman1Img, woman2Img, anonymusImg   } from "../assets/img"
 
 
 export const navLinks = [
@@ -32,3 +32,14 @@ export const immoCards = [
   {id: 15,type: "Haus zum Kauf", img: immo15Img, price: "1.999.000 €", qm: "286 qm²", rooms: "6", city: '88131 Lindau (Bodensee)', street: "Händelstraße 50", desc: "Luxuriöses 6-Zimmer-Haus in Lindau (Bodensee) mit großzügigem Grundstück und gehobener Ausstattung. Perfekt für Familien, die nach einem exklusiven Wohnsitz suchen.", imgSlider: [slide1_1Img, slide1_2Img, slide1_3Img, slide1_4Img]},
   {id: 16,type: "Wohnung zur Miete", img: immo16Img, price: "920 € (warm)", qm: "100 qm²", rooms: "3", city: '88316 Isny im Allgäu', street: "Rembrandtstraße 25", desc: "Geräumige 3-Zimmer-Wohnung zur Miete in Isny im Allgäu. Ideal für Paare oder kleine Familien, die eine ruhige und moderne Wohnung suchen.", imgSlider: [slide1_1Img, slide1_2Img, slide1_3Img, slide1_4Img]},
 ]
+
+export const testimonials = [
+  { name: "Johanna S.", date: "15. Juli 2023", text: "Ein hervorragender Service von Anfang bis Ende! Ich fühlte mich rundum gut beraten und betreut.", img: woman1Img },
+  { name: "Markus W.", date: "22. August 2023", text: "Das Team hat sich intensiv um meine Bedürfnisse gekümmert und eine passende Immobilie für mich gefunden.", img: man1Img },
+  { name: "Sabine H.", date: "2. September 2023", text: "Sehr professionell und transparent in der Kommunikation. Ich kann sie nur weiterempfehlen!", img: woman2Img },
+  { name: "Thomas K.", date: "10. Juli 2023", text: "Ein rundum gelungener Service. Vielen Dank an das gesamte Team!", img: man2Img },
+  { name: "Silke B.", date: "5. März 2023", text: "Diskrete und sehr professionelle Abwicklung. Ich habe mich gut aufgehoben gefühlt.", img: anonymusImg },
+  { name: "Hubert K.", date: "12. Mai 2023", text: "Schnelle und unkomplizierte Abwicklung. Sehr zufrieden!", img: anonymusImg },
+  { name: "Lisa P.", date: "30. September 2023", text: "Die Betreuung war ausgezeichnet, obwohl ich anonym bleiben wollte.", img: anonymusImg },
+  { name: "Michael R.", date: "28. Juni 2023", text: "Die Beratung war erstklassig und das Ergebnis mehr als zufriedenstellend. Klare Empfehlung!", img: man3Img }
+];

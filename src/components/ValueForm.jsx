@@ -53,7 +53,7 @@ const ValueForm = ({ setValue, value }) => {
           onClick={() => setFormShown(true)}
           className="btn btn-hover mb-4"
         >
-          Wert schätzen
+          Jetzt den Wert schätzen
         </button>
       ) : (
         <form onSubmit={handleEstimate} className="space-y-4 w-full max-w-[90vw] md:max-w-md bg-[#2a313c] rounded-xl p-5">

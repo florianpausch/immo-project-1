@@ -21,6 +21,7 @@ export default {
       },
       colors: {
         background: "#2d3440",
+        alt: "#2d3450",
         tc: "#fff",
         navbg: "#d0d0d0",
       },

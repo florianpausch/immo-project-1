@@ -21,6 +21,16 @@ import slide1_2Img from "./slide1_2Img.webp";
 import slide1_3Img from "./slide1_3Img.jpg";
 import slide1_4Img from "./slide1_4Img.jpg";
 
+
+import  teamJpeg  from "./team.jpeg";
+
+import man1Img from "./man1.jpg";
+import man2Img from "./man2.jpg";
+import man3Img from "./man3.jpeg";
+import woman1Img from "./woman1.jpg";
+import woman2Img from "./woman2.jpeg";
+import anonymusImg from "./anonymus.jpg"
+
 export { logo, 
           realEstateImg,
           immo1Img, 
@@ -43,4 +53,11 @@ export { logo,
           slide1_2Img,
           slide1_3Img,
           slide1_4Img,
+          teamJpeg,
+          man1Img,
+          man2Img,
+          man3Img,
+          woman1Img,
+          woman2Img,
+          anonymusImg
         };
