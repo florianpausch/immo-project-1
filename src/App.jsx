@@ -10,6 +10,8 @@ import UnserTeam from "./components/UnserTeam";
 import UnsereMission from "./components/UnsereMission";
 import UnsereWerte from "./components/UnsereWerte";
 import Kundenbewertungen from "./components/Kundenbewertungen";
+import Contact from "./sections/Contact";
+import Footer from "./sections/Footer";
 
 const App = () => (
   <Router>
@@ -35,7 +37,14 @@ const App = () => (
           <Route path="/unsere-mission" element={<UnsereMission />} />
           <Route path="/unsere-werte" element={<UnsereWerte />} />
           <Route path="/Kundenbewertungen" element={<Kundenbewertungen />} />
+          
         </Routes>
+      </section>
+      <section>
+        <Contact />
+      </section>
+      <section>
+        <Footer />
       </section>
     </main>
   </Router>

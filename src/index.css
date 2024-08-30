@@ -84,7 +84,7 @@
   }
 
  .detail-container {
-    @apply py-20 bg-zinc-800 text-white flex flex-col items-center justify-center relative;
+    @apply py-20 bg-zinc-600 text-white flex flex-col items-center justify-center relative;
   }
   
   .close-button {
@@ -95,4 +95,8 @@
     @apply flex flex-col items-center text-xs md:text-base   border-2 border-gray-300 rounded-xl p-5 duration-300 hover:scale-110 hover:cursor-pointer ease-in-out
   }
 
+
+  .react-calendar {
+    @apply bg-[#1e2a38]; /* Ihre gewünschte Hintergrundfarbe */
+  }
  }

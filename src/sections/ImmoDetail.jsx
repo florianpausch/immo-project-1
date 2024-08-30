@@ -1,6 +1,7 @@
+import React, { useRef, useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { immoCards } from "../constants";
-import { useEffect, useRef, useState } from "react";
+import Besichtigungstermin from "../components/Besichtigungstermin";
 
 const ImmoDetail = () => {
   const { id } = useParams();
@@ -8,8 +9,9 @@ const ImmoDetail = () => {
   const immoDetailRef = useRef(null); // Reference für den ImmoDetail-Container
   const immo = immoCards.find((card) => card.id === parseInt(id));
 
-  //Zustand füt das aktuelle Bild
+  // Zustand für das aktuelle Bild und für die Sichtbarkeit der Besichtigungstermin-Komponente
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [showBesichtigungstermin, setShowBesichtigungstermin] = useState(false);
 
   useEffect(() => {
     if (immoDetailRef.current) {
@@ -29,6 +31,10 @@ const ImmoDetail = () => {
     setCurrentImageIndex(index);
   };
 
+  const handleBesichtigungsterminClick = () => {
+    setShowBesichtigungstermin(!showBesichtigungstermin); // Toggle Sichtbarkeit
+  };
+
   return (
     <div ref={immoDetailRef} className="detail-container">
       {/* Schließ-Button oben rechts */}
@@ -42,7 +48,7 @@ const ImmoDetail = () => {
       <h1 className="w-[60vw] text-center">{immo.desc}</h1>
 
       {/* Slider */}
-      <div className="flex flex-row justify-centeralign-center mx-2 relative">
+      <div className="flex flex-row justify-center align-center mx-2 relative">
         <button
           className="text-4xl mr-5"
           onClick={() =>
@@ -59,7 +65,7 @@ const ImmoDetail = () => {
         <img
           src={immo.imgSlider[currentImageIndex]}
           alt={`immo-${immo.id}`}
-          className="rounded-xl my-5 object-cover w-[250px] h-[180px]  md:w-[600px] md:h-[400px]"
+          className="rounded-xl my-5 object-cover w-[250px] h-[180px] md:w-[600px] md:h-[400px]"
         />
 
         <button
@@ -73,8 +79,7 @@ const ImmoDetail = () => {
         </button>
       </div>
 
-      {/*<img src={immo.img} alt={`immo-${immo.id}`} width={200} className="rounded-xl my-5"/>*/}
-
+      {/* Details */}
       <ul className="text-left inline-block">
         <li className="mb-2">
           <strong>Typ:</strong> {immo.type}
@@ -97,10 +102,16 @@ const ImmoDetail = () => {
       </ul>
 
       <div className="flex flex-row justify-center mx-3 text-xs md:text-lg">
-        <button className="btn btn-hover ml-5">
+        <button
+          className="btn btn-hover ml-5"
+          onClick={handleBesichtigungsterminClick} // Button Click Handler
+        >
           Besichtigungstermin Anfragen
         </button>
       </div>
+
+      {/* Bedingte Anzeige der Besichtigungstermin-Komponente */}
+      {showBesichtigungstermin && <Besichtigungstermin />}
     </div>
   );
 };

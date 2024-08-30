@@ -9,6 +9,10 @@ import solarImg from "./solar.svg";
 import integretyImg from "./integrity.svg";
 import innovationImg from "./innovation.svg";
 import communityImg from "./community.svg";
+import instaImg from "./insta.svg";
+import facebookImg from "./facebook.svg";
+import linkedinImg from "./linkedin.svg";
+import xImg from "./x.svg"
 
 export {
   missionImg,
@@ -21,5 +25,9 @@ export {
   solarImg,
   communityImg,
   innovationImg,
-  integretyImg
+  integretyImg,
+  facebookImg,
+  instaImg,
+  linkedinImg,
+  xImg
 };
